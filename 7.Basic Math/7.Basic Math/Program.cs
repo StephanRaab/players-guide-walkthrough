@@ -36,6 +36,23 @@ namespace _7.Basic_Math
             area = 0.5 * areaBase * areaHeight;
             Console.WriteLine("The area of a triangle with base " + areaBase + " and height " + areaHeight + " is " + area + ".");
             Console.ReadLine();
+
+            // Remainders
+            int a;
+            int b;
+            Console.WriteLine("Enter your first integer:");
+            a = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Enter your second integer:");
+            b = Convert.ToInt16(Console.ReadLine());
+
+            int quotient = a / b;
+            int remainder = a % b;
+            int aTestCase = b * quotient + remainder;
+
+            Console.WriteLine("{0}/{1} = {2}, with a remainder of {3}", a, b, quotient, remainder);
+            Console.WriteLine("Is {0} equal to {1}?", aTestCase, a);
+            Console.ReadLine();
         }
     }
 }
