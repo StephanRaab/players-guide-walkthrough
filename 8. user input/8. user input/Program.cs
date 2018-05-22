@@ -30,8 +30,8 @@ namespace _8.user_input
                 cylinderBaseRadiusDouble *
                 (cylinderBaseRadiusDouble + cylinderHeightDouble);
 
-            Console.WriteLine("Did you know that the volume of that Cylinder is {0}?", cylinderVolume);
-            Console.WriteLine("Or, did you know that the surface of that Cylinder is a whopping {0}!", cylinderSurface);
+            Console.WriteLine($"The volume of the cylinder is: {cylinderVolume}.");
+            Console.WriteLine($"The Surface area is a whopping {cylinderSurface}!");
             Console.ReadLine();
         }
     }
