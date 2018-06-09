@@ -10,6 +10,7 @@ namespace _12.Looping
     {
         private static void Main(string[] args)
         {
+            //print pyramid
             int count;
 
             Console.WriteLine("How tall should the pyramid be?");
@@ -30,6 +31,28 @@ namespace _12.Looping
                     Console.Write("*");
 
                 Console.WriteLine();
+            }
+            Console.ReadKey();
+
+            //fizzbuzz
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
             }
             Console.ReadKey();
         }
