@@ -12,7 +12,7 @@ namespace _12.Looping
         {
             int count;
 
-            Console.WriteLine("How tall do you want your stack?");
+            Console.WriteLine("How tall should the pyramid be?");
             string height = Console.ReadLine();
             Console.WriteLine("\n");
 
@@ -20,7 +20,13 @@ namespace _12.Looping
 
             for (int row = 0; row < count; row++)
             {
+                for (int column = count; column > row + 1; column--)
+                    Console.Write(" ");
+
                 for (int column = 0; column < row + 1; column++)
+                    Console.Write("*");
+
+                for (int column = 0; column < (row - 1) + 1; column++)
                     Console.Write("*");
 
                 Console.WriteLine();
