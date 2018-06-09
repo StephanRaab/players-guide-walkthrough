@@ -12,6 +12,8 @@ namespace _12.Looping
         {
             for (int x = 1; x <= 10; x++)
             {
+                if (x % 2 != 0)
+                    continue;
                 Console.WriteLine(x);
             }
             Console.ReadKey();
