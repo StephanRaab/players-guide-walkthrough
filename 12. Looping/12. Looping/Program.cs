@@ -10,11 +10,20 @@ namespace _12.Looping
     {
         private static void Main(string[] args)
         {
-            for (int x = 1; x <= 10; x++)
+            int rows;
+
+            Console.WriteLine("How tall do you want your stack?");
+            string height = Console.ReadLine();
+            Console.WriteLine("\n");
+
+            rows = Convert.ToInt32(height);
+
+            for (int x = 0; x < rows; x++)
             {
-                if (x % 2 != 0)
-                    continue;
-                Console.WriteLine(x);
+                for (int column = 0; column < x + 1; column++)
+                    Console.Write("*");
+
+                Console.WriteLine();
             }
             Console.ReadKey();
         }
