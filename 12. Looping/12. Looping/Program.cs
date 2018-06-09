@@ -10,16 +10,12 @@ namespace _12.Looping
     {
         private static void Main(string[] args)
         {
-            int playersNum;
-
-            do
+            int x;
+            for (x = 1; x <= 10; x++)
             {
-                Console.WriteLine("Enter a number between 0 and 10:");
-                string playerResponse = Console.ReadLine();
-                playersNum = Convert.ToInt32(playerResponse);
+                Console.WriteLine(x);
             }
-
-            while (playersNum < 0 || playersNum > 10);
+            Console.ReadKey();
         }
     }
 }
