@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _10.Decision_Making
 {
@@ -10,16 +6,20 @@ namespace _10.Decision_Making
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Input a random number:");
-            string randNum = Console.ReadLine();
+            Console.WriteLine("Input your first number:");
+            string firstNum = Console.ReadLine();
 
-            if (Convert.ToInt32(randNum) % 2 == 0)
+            Console.WriteLine("Thanks, now input your second number:");
+            string secondNum = Console.ReadLine();
+
+            if ((Convert.ToInt32(firstNum) < 0 && Convert.ToInt32(secondNum) < 0) ||
+                (Convert.ToInt32(firstNum) > 0 && Convert.ToInt32(secondNum) > 0))
             {
-                Console.WriteLine("I see, that's an even number!");
+                Console.WriteLine("Multiplying these together will be positive");
             }
             else
             {
-                Console.WriteLine("That's an odd number in so many ways..");
+                Console.WriteLine("The result will be a negative number");
             }
 
             Console.ReadLine();
