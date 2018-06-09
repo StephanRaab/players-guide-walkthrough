@@ -10,8 +10,7 @@ namespace _12.Looping
     {
         private static void Main(string[] args)
         {
-            int x;
-            for (x = 1; x <= 10; x++)
+            for (int x = 1; x <= 10; x++)
             {
                 Console.WriteLine(x);
             }
