@@ -10,13 +10,15 @@ namespace _12.Looping
     {
         private static void Main(string[] args)
         {
-            int num = 1;
-            while (num <= 10)
+            int playersNum = -1;
+
+            while (playersNum < 0 || playersNum > 10)
             {
-                Console.WriteLine(num);
-                num++;
+                //this code will be repeated until the player types in a number between 0 and 10.
+                Console.WriteLine("Enter a number between 0 and 10:");
+                string playerResponse = Console.ReadLine();
+                playersNum = Convert.ToInt32(playerResponse);
             }
-            Console.ReadKey();
         }
     }
 }
